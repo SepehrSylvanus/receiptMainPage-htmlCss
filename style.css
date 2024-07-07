@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -6,9 +8,164 @@
 body {
   background: #f3e5d7;
   margin: 0 auto;
-  margin-top: 7.6em;
+  padding: 7.6em 0;
+  font-family: Outfit;
+  color: #5f564d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Young Serif", serif;
+  color: #854632;
+}
+div {
+  width: 100%;
+}
+h1 {
+  font-weight: normal;
+  line-height: 100%;
+  font-size: 40px;
+  font-family: "Young Serif";
 }
 .container {
   border-radius: 24px;
   padding: 2.5em;
+  background: #ffffff;
+  width: 736px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.container img {
+  width: 656px;
+  height: 300px;
+  border-radius: 12px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.title p {
+  font-family: Outfit;
+  list-style: 150%;
+}
+.prepration {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  gap: 16px;
+  border-radius: 12px;
+  background: #fff7fb;
+}
+.prepration ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 1em;
+}
+
+.prepration ul li::marker {
+  color: #854632;
+}
+.prepration ul li {
+  padding-left: 10px;
+  text-indent: -10px;
+}
+.prepration h3 {
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #7a284e;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.ingredients h2 {
+  font-weight: 400;
+  font-size: 28px;
+}
+.ingredients ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 1em;
+}
+.ingredients ul li {
+  padding-left: 1em;
+}
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.instructions ol {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.instructions ol li {
+  padding-left: 1em;
+}
+.instructions ol li::marker {
+  font-weight: 700;
+  color: #854632;
+}
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.nutrition .table .cell {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nutrition .table .cell p {
+  flex: 1;
+}
+.nutrition .table .cell:not(:last-child) {
+  border-bottom: 1px solid #e3ddd7;
+  margin-bottom: 0.75em;
+  padding-bottom: 0.75em;
+}
+.nutrition .table .cell p:last-child {
+  font-weight: bold;
+  color: #854632;
+}
+@media (max-width: 720px) {
+  body {
+    padding: 0;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .text-content {
+    padding: 2.5em 2em;
+  }
+  .container {
+    padding: 0;
+  }
+  .container img {
+    width: 100%;
+    border-radius: unset;
+  }
 }
