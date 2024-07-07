@@ -158,14 +158,20 @@ h1 {
   h1 {
     font-size: 36px;
   }
+  .container {
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    border-radius: 0;
+    gap: 0;
+  }
   .text-content {
     padding: 2.5em 2em;
   }
-  .container {
-    padding: 0;
-  }
+
   .container img {
     width: 100%;
-    border-radius: unset;
+    height: 171px;
+    border-radius: 0;
   }
 }
